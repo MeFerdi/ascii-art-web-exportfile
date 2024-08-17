@@ -30,6 +30,8 @@ Ensure you have the following installed:
 
 ```bash
 git clone https://learn.zone01kisumu.ke/git/jowala/ascii-art-web-stylize.git
+```
+```bash
 cd ascii-art-web
 ```
 
