@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+    position: relative;
+}
+
+.bottom-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Make the image span the entire width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 350px; /* Optional: limit the height of the image */
+    z-index: -1;
+}
+
+.head {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem; /* Adjust this value as needed */
+    color: #1d5de9; /* Ensure text is readable against the background */
+     /* Optional: Adds a shadow to improve readability */
+    /* Optional: Makes the text bolder */
+}
+
+.layoutGridStyle {
+    padding: 0px;
+    border-width: 0px;
+    vertical-align: top;
+}
+
+.bigtable {
+    padding-top: 40px;
+    width: 60%; /* Adjusted for responsiveness */
+    margin: auto;
+    overflow: hidden; /* Ensures content doesn't overflow the body */
+}
+
+#submit-btn {
+    background-color: rgb(84, 153, 243); /* Light Sea Green */
+    color: white; /* Ensures text is visible on the button */
+    border: none; /* Removes default border */
+    padding: 10px 20px; /* Adds padding inside the button */
+    font-size: 1rem; /* Adjust font size */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    border-radius: 3px; /* Rounds the corners of the button */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+#submit-btn:hover {
+    background-color: #1d5de9; /* Darker shade for hover effect */
+}
+
+#submit-btn:focus {
+    outline: none; /* Removes the default focus outline */
+    box-shadow: 0 0 0 3px #1d5de9; /* Adds a focus ring for accessibility */
+}
+
+#layoutGrid {
+    margin: 0 auto;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.resizable-textarea {
+    width: 100%;
+    min-height: 150px;
+    max-width: 100%;
+    resize: both;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow: auto; /* Ensures textarea has scrollbars when content exceeds height */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .bigtable {
+        width: 90%; /* Adjusted width for smaller screens */
+    }
+    
+    .resizable-textarea {
+        width: 90%;
+    }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+    .resizable-textarea {
+        width: 100%;
+    }
+}
+
+#ascii-art-result {
+    overflow: auto; /* Ensures pre element has scrollbars when content exceeds height */
+    max-height: 400px; /* Example height limit; adjust as needed */
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 1em;
+}
